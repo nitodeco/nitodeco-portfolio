@@ -2,9 +2,10 @@ iframe {
     width: 1246px;
     max-width: 80%;
     height: 700px;
-    padding: 24px;
-    border: 1px solid var(--mid);
-    border-radius: 16px;
+    padding: 16px;
+    border: 2px solid var(--yellow);
+    border-radius: 0px;
+    border-style: dashed;
 }
 
 .projects {
