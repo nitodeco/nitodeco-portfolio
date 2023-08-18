@@ -12,18 +12,24 @@ const Projects = () => {
                 <h2 id="welcome">Projects</h2>
             </div>
             <div id="project-container">
-                <iframe
+                <div className="showcase">
+                    <iframe
                     className="project"
                     src={project1}
                     frameBorder={0} />
-                <iframe
+                </div>
+                <div className="showcase">
+                    <iframe
                     className="project"
                     src={project2}
                     frameBorder={0} />
-                <iframe
+                </div>
+                <div className="showcase">
+                    <iframe
                     className="project"
                     src={project3}
                     frameBorder={0} />
+                </div>
             </div>
         </div>
     );

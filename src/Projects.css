@@ -1,8 +1,16 @@
-iframe {
+.project {
     width: 1246px;
-    max-width: 80%;
     height: 700px;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     padding: 16px;
+    max-width: 80%;
     border: 2px solid var(--yellow);
     border-radius: 0px;
     border-style: dashed;
