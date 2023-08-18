@@ -1,6 +1,6 @@
 const Navigation = () => {
     return (
-        <nav className="navbar">
+        <nav className="navbar shadow">
             <h1>Nico Möhn</h1>
             <div className="links">
                 <div className="btn"><a href="/">Home</a></div>
