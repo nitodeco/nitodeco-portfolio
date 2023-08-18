@@ -162,3 +162,7 @@ a:hover {
 .title {
   font-size: 4rem;
 }
+
+a:active {
+  color: var(--yellow);
+}
