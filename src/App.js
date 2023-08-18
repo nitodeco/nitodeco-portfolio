@@ -1,5 +1,8 @@
 import './App.css';
-import Navigation from './Navigation.js';
+import Navigation from './Navigation';
+import Home from './Home';
+import Projects from './Projects';
+import About from './About';
 
 function App() {
   return (
