@@ -55,14 +55,14 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-
+/*
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
   height: fit-content;
 }
-
+*/
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 500;
