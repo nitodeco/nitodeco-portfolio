@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './Navigation';
 import Home from './Home';
 import './Home.css';
@@ -9,7 +10,13 @@ function App() {
     <div className="App">
       <Navigation />
       <div className="content">
-        <Home />
+        <Router>
+          <Routes>
+            <Route path="/" exact component={Home} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/resume" component={Resume} />
+          </Routes>
+        </Router>
       </div>
     </div>
   );
