@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Navigation />
       <div className="content">
-        <h1>Portfolio</h1>
+        <Home />
       </div>
     </div>
   );
