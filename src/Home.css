@@ -17,8 +17,15 @@
 }
 
 #welcome {
-    font-size: 5em;
+    font-size: 4rem;
 }
+
+@media (max-width: 460px) {
+    #welcome {
+        font-size: 3rem;
+    }
+}
+
 
 #intro-container {
     padding: 2em;
@@ -29,9 +36,9 @@
 
 #intro-container p {
     font-family: 'Roboto Mono', monospace;
-    padding: 16px;
-    border: 2px solid white;
-    border-style: dashed;
+    padding: 32px;
+    border: 2px solid var(--mid);
     border-radius: 16px;
     font-size: 1.2em;
+    text-align: left;
 }
