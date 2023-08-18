@@ -1,5 +1,3 @@
-import React, {useState, useEffect } from 'react';
-
 function calculateAge(birthdate) {
     const birthYear = birthdate.getFullYear();
     const birthMonth = birthdate.getMonth();
