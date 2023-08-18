@@ -24,7 +24,7 @@ const Home = () => {
     return (
         <div className="home">
             <div id="welcome-container" className="titleContainer">
-                <h2 id="welcome">Welcome</h2>
+                <h2 className="title">Welcome</h2>
             </div>
             <div id="intro-container">
                 <p>
