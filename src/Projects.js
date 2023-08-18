@@ -2,7 +2,7 @@ const Projects = () => {
 
     const baseURL = "https://nitodeco.github.io/"
 
-    const project1 = baseURL + "test";
+    const project1 = baseURL + "";
     const project2 = baseURL + "";
     const project3 = baseURL + "";
 
