@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: fit-content;
 }
@@ -10,11 +11,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 160px;
     width: 100%;
     background-color: var(--dark);
 }
 
 #welcome {
-    font-size: 6em;
+    font-size: 5em;
+}
+
+#intro-container {
+    
+}
+
+#intro-container p {
+    font-family: 'Roboto Mono', monospace;
 }
