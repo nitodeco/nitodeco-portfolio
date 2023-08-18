@@ -20,7 +20,8 @@ function calculateAge(birthdate) {
   }
 
 const Home = () => {
-    
+    const birthdate = new Date('2002-02-23');
+    const age = calculateAge(birthdate);
 
     return (
         <div className="home">
@@ -31,7 +32,9 @@ const Home = () => {
                 <p>
                     Hello there! <br/>
                     <br/>
-                    I'm Nico, a 21-year-old who's absolutely fascinated by the art of web development. This portfolio is my way of sharing the excitement of my journey with you. Here, I've put together a collection of demo projects that showcase what I've been working on.
+                    I'm Nico, a {age}-year-old based in Germany who's absolutely passionate of web development. <br /> 
+                    This portfolio is my way of sharing the excitement of my journey with you. <br /> 
+                    Here, I've put together a collection of demo projects that showcase what I've been working on.
                 </p>
             </div>
         </div>

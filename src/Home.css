@@ -23,6 +23,8 @@
 #intro-container {
     padding: 2em;
     padding-inline: 10vw;
+    min-width: 70vw;
+    max-width: 90vw;
 }
 
 #intro-container p {
