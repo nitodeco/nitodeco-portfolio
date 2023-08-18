@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navigation from './Navigation';
-import Home from './Home';
+
+import Navigation from './Navigation.js';
+import Home from './Home.js';
 import './Home.css';
-import Projects from './Projects';
-import Resume from './Resume';
+import Projects from './Projects.js';
+import Resume from './Resume.js';
 
 function App() {
   return (
@@ -12,9 +13,9 @@ function App() {
       <div className="content">
         <Router>
           <Routes>
-            <Route path="/" exact component={Home} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/resume" component={Resume} />
+            <Route path="/" exact element={ <Home /> } />
+            <Route path="/projects" element={ <Projects /> } />
+            <Route path="/resume" element={ <Resume /> } />
           </Routes>
         </Router>
       </div>
