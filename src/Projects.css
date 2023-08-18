@@ -16,6 +16,17 @@
     border-style: dashed;
 }
 
+.showcase-title {
+    width: 100%;
+    text-align: left;
+}
+
+.showcase-text {
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    width: 1246px;
+}
+
 .projects {
     display: flex;
     justify-content: center;
