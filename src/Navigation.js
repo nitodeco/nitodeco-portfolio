@@ -3,9 +3,9 @@ const Navigation = () => {
         <nav className="navbar">
             <h1>Nico Möhn</h1>
             <div className="links">
-                <a href="/"><p>Home</p></a>
-                <a href="/projects"><p>Projects</p></a>
-                <a href="/about"><p>About</p></a>
+                <div className="btn"><a href="/">Home</a></div>
+                <div className="btn"><a href="/projects">Projects</a></div>
+                <div className="btn"><a href="/about">About</a></div>
             </div>
         </nav>
     );
