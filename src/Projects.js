@@ -14,6 +14,9 @@ const Projects = () => {
             <div id="project-container">
                 <div className="showcase">
                     <h1 className="showcase-title">Project 1</h1>
+                    <p className="showcase-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime similique vel asperiores aperiam doloribus nam cumque reprehenderit blanditiis quis sit quibusdam modi incidunt minima natus, et sint dolorum itaque nobis.
+                    </p>
                     <iframe
                     className="project"
                     src={project1}
@@ -21,6 +24,9 @@ const Projects = () => {
                 </div>
                 <div className="showcase">
                     <h1 className="showcase-title">Project 2</h1>
+                    <p className="showcase-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime similique vel asperiores aperiam doloribus nam cumque reprehenderit blanditiis quis sit quibusdam modi incidunt minima natus, et sint dolorum itaque nobis.
+                    </p>
                     <iframe
                     className="project"
                     src={project2}
@@ -28,6 +34,9 @@ const Projects = () => {
                 </div>
                 <div className="showcase">
                     <h1 className="showcase-title">Project 3</h1>
+                    <p className="showcase-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime similique vel asperiores aperiam doloribus nam cumque reprehenderit blanditiis quis sit quibusdam modi incidunt minima natus, et sint dolorum itaque nobis.
+                    </p>
                     <iframe
                     className="project"
                     src={project3}
