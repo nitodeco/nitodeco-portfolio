@@ -88,3 +88,7 @@ a:hover {
   background-color: var(--dark);
   color: var(--yellow);
 }
+
+.btn:hover a {
+  color: var(--yellow);
+}
