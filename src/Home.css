@@ -21,9 +21,15 @@
 }
 
 #intro-container {
-    
+    padding: 2em;
+    padding-inline: 20vw;
 }
 
 #intro-container p {
     font-family: 'Roboto Mono', monospace;
+    padding: 16px;
+    border: 2px solid white;
+    border-style: dashed;
+    border-radius: 16px;
+    font-size: 1.2em;
 }

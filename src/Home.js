@@ -29,7 +29,8 @@ const Home = () => {
             </div>
             <div id="intro-container">
                 <p>
-                    Hello there! <br/> 
+                    Hello there! <br/>
+                    <br/>
                     I'm Nico, a 21-year-old who's absolutely fascinated by the art of web development. This portfolio is my way of sharing the excitement of my journey with you. Here, I've put together a collection of demo projects that showcase what I've been working on.
                 </p>
             </div>
