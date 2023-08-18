@@ -1,8 +1,22 @@
 iframe {
-    width: 100vw;
+    width: 1246px;
     max-width: 80%;
-    height: 600px;
+    height: 700px;
     padding: 24px;
     border: 1px solid var(--mid);
     border-radius: 16px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#project-container {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    justify-items: center;
 }
