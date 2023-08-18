@@ -1,6 +1,5 @@
 ## Portfolio
 
-## Table of Contents
 - [About](#about)
 - [Tech Stack](#tech-stack)
 - [Usage](#usage)
