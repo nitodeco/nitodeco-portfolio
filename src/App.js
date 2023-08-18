@@ -2,7 +2,7 @@ import Navigation from './Navigation';
 import Home from './Home';
 import './Home.css';
 import Projects from './Projects';
-import About from './About';
+import Resume from './Resume';
 
 function App() {
   return (
