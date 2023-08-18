@@ -138,5 +138,7 @@ a:hover {
   body, header, footer {
       padding-left: min(0vmin, env(safe-area-inset-left));
       padding-right: min(0vmin, env(safe-area-inset-right));
+      padding-top: min(0vmin, env(safe-area-inset-top));
+      padding-bottom: min(0vmin, env(safe-area-inset-bottom));
   }
 }
