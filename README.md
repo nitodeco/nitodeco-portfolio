@@ -19,19 +19,19 @@ In order to use and modify this project, follow these steps:
 
 1. Clone this repository: 
 ```bash
-`git clone https://github.com/nitodeco/nitodeco-portfolio.git`
+git clone https://github.com/nitodeco/nitodeco-portfolio.git
 ```
 2. Navigate to the project directory: 
 ```bash
-`cd nitodeco-portfolio`
+cd nitodeco-portfolio
 ```
 3. Install dependencies: 
 ```bash
-`npm install`
+npm install
 ```
 4. Start the development server: 
 ```bash
-`npm start`
+npm start
 ```
 
 Afterwards, remove the git origin and personalise the project as you please.
