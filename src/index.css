@@ -11,6 +11,8 @@
 }
 
 body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
   font-family: 'Roboto', sans-serif;
   margin: 0;
   background-color: var(--bg);
