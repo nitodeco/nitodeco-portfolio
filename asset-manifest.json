@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/nitodeco-portfolio/static/css/main.073c9b0a.css",
+    "main.js": "/nitodeco-portfolio/static/js/main.ad66a310.js",
+    "static/media/logo.svg": "/nitodeco-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/nitodeco-portfolio/index.html",
+    "main.073c9b0a.css.map": "/nitodeco-portfolio/static/css/main.073c9b0a.css.map",
+    "main.ad66a310.js.map": "/nitodeco-portfolio/static/js/main.ad66a310.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.ad66a310.js"
+  ]
+}
