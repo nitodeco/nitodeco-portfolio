@@ -15,8 +15,15 @@ const Projects = () => {
                 <iframe
                     className="project"
                     src={project1}
-                    frameBorder={0}
-                />
+                    frameBorder={0} />
+                <iframe
+                    className="project"
+                    src={project2}
+                    frameBorder={0} />
+                <iframe
+                    className="project"
+                    src={project3}
+                    frameBorder={0} />
             </div>
         </div>
     );
