@@ -15,7 +15,7 @@ The following technologies were used for this projects:
 - GitHub Pages for hosting
 
 ## Usage
-In order to use and modify this project, follow these steps:
+In order to use and modify this project, you must first install Node.js and Git on your machine. Afterwards, follow these steps:
 
 1. Clone this repository: 
 ```bash
