@@ -7,10 +7,10 @@ const Navigation = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 15) {
-                setIsVisible(true);
-            } else {
+            if (window.scrollY > 15 && window.scrollY < lastScrollY) {
                 setIsVisible(false);
+            } else if (window.scrollY > 15 && window.scrollY > lastScrollY) {
+                setIsVisible(true);
             }
             setLastScrollY(window.scrollY);
         };
@@ -28,7 +28,7 @@ const Navigation = () => {
             <div className={`pageHeader ${isVisible ? 'visible' : ''}`}>
                 <h1 id="pageTitle">{pageTitle}</h1>
             </div>
-            <div className="links">
+            <div className="links shadow">
                 <div className="btn"><Link className="navLink" to="/home">Home</Link></div>
                 <div className="btn"><Link className="navLink" to="/projects">Projects</Link></div>
                 <div className="btn"><Link className="navLink" to="/resume">Resume</Link></div>
