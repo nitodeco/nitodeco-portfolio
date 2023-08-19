@@ -1,3 +1,27 @@
+import { useState, useEffect } from 'react';
+
+function useScrollDirection() {
+        const [lastScrollTop, setLastScrollTop] = useState(0);
+        const [direction, setDirection] = useState('up');
+    
+        useEffect(() => {
+            function handleScroll() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    setDirection('down');
+                } else {
+                    setDirection('up');
+                }
+                setLastScrollTop(scrollTop);
+            }
+    
+            window.addEventListener('scroll', handleScroll);
+            return () => window.removeEventListener('scroll', handleScroll);
+        }, [lastScrollTop]);
+    
+        return direction;
+    }
+
 const Projects = () => {
 
     const baseURL = "https://nitodeco.github.io/"
@@ -6,9 +30,11 @@ const Projects = () => {
     const project2 = baseURL + "";
     const project3 = baseURL + "";
 
+    
+
     return (
         <div className="projects">
-            <div className="titleContainer">
+            <div className="titleContainer ${scrollDirection === 'up' ? 'show' : 'hide'}">
                 <h2 className="title">Projects</h2>
             </div>
             <div id="project-container">
