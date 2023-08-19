@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Mono', monospace;
 }
 
-a {
+.navLink {
   position: relative;
   text-decoration: none;
   color: var(--white);
@@ -84,7 +84,7 @@ a {
   transition: font-size 0.3s;
 }
 
-a:hover {
+.navLink:hover {
   color: var(--yellow);
   font-size: 105%;
 }
@@ -108,7 +108,7 @@ a:hover {
   transform: scale(1.02);
 }
 
-.btn:hover a {
+.btn:hover .navLink {
   color: var(--yellow);
 }
 
@@ -163,6 +163,6 @@ a:hover {
   font-size: 4rem;
 }
 
-a:active {
+.navLink:active {
   color: var(--yellow);
 }
