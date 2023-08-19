@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navigation from './Navigation.js';
 import Home from './Home.js';
@@ -6,12 +6,6 @@ import './Home.css';
 import './Projects.css';
 import Projects from './Projects.js';
 import Resume from './Resume.js';
-
-function GetCurrentPage() {
-  const location = useLocation();
-
-  return location;
-}
 
 function App() {
   return (
