@@ -11,12 +11,6 @@
     font-size: 4rem;
 }
 
-@media (max-width: 460px) {
-    #welcome {
-        font-size: 3rem;
-    }
-}
-
 #intro-container {
     padding: 2em;
     padding-inline: 10vw;

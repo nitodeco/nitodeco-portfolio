@@ -1,6 +1,20 @@
 .project {
-    width: 1246px;
-    height: 700px;
+    width: 100%;
+    height: 600px;
+}
+
+@media (max-width: 900px) {
+    .project {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .project {
+        width: 100%;
+        height: 300px;
+    }
 }
 
 .showcase {
@@ -8,7 +22,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     padding: 16px;
     max-width: 80%;
     border: 2px solid var(--yellow);
@@ -24,7 +37,11 @@
 .showcase-text {
     font-family: 'Roboto Mono', monospace;
     text-align: left;
-    width: 1246px;
+    width: auto;
+    max-width: 100%;
+    flex: 1;
+    flex-wrap: wrap;
+    word-wrap: break-word;
 }
 
 .projects {
