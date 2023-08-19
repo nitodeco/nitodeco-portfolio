@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/nitodeco-portfolio/static/css/main.7a4b2f2a.css",
-    "main.js": "/nitodeco-portfolio/static/js/main.39e776fc.js",
+    "main.js": "/nitodeco-portfolio/static/js/main.f450823e.js",
     "index.html": "/nitodeco-portfolio/index.html",
     "main.7a4b2f2a.css.map": "/nitodeco-portfolio/static/css/main.7a4b2f2a.css.map",
-    "main.39e776fc.js.map": "/nitodeco-portfolio/static/js/main.39e776fc.js.map"
+    "main.f450823e.js.map": "/nitodeco-portfolio/static/js/main.f450823e.js.map"
   },
   "entrypoints": [
     "static/css/main.7a4b2f2a.css",
-    "static/js/main.39e776fc.js"
+    "static/js/main.f450823e.js"
   ]
 }
