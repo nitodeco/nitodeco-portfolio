@@ -1,32 +1,34 @@
 .navbar {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: auto;
-    font-family: 'Roboto Mono', monospace;
-    position: sticky;
-    top: 0;
+    width: 100vw;
     z-index: 100;
+
+    font-family: 'Roboto Mono', monospace;
     background-color: var(--bg);
-  }
-  
-  .links {
+}
+
+.pageHeader.visible {
+    top: 0;
+}
+
+.links {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 32px;
     width: 100vw;
-  }
-  
-  .navbar h1 {
+}
+
+.navbar h1 {
     font-size: 32px;
     margin-top: 8px;
     margin-bottom: 8px;
-  }
+}
 
-  .navLink {
+.navLink {
     position: relative;
     text-decoration: none;
     color: var(--white);
@@ -36,13 +38,29 @@
     width: 100%;
     height: 100%;
     transition: font-size 0.3s;
-  }
-  
-  .navLink:hover {
+}
+
+.navLink:hover {
     color: var(--yellow);
     font-size: 105%;
-  }
+}
 
-  .navLink:active {
+.navLink:active {
     color: var(--yellow);
+}
+
+#pageTitle {
+    color: var(--yellow);
+}
+
+.pageHeader {
+    width: 100%;
+    text-align: center;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: top 0.3s;
+    z-index: 100;
 }

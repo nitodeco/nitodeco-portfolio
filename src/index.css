@@ -110,11 +110,11 @@ h1, h2, h3, h4, h5, h6 {
 .titleContainer {
   display: block;
   height: 160px;
-  width: 100%;
+  width: 100vw;
   background-color: var(--dark);
   margin-top: 0;
   position: sticky;
-  top: -72px;
+  top: -10rem;
   z-index: 50;
 
   transition: transform 0.3s ease;

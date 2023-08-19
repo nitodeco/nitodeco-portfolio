@@ -1,4 +1,6 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
+
+import RedirectToHome from './RedirectToHome.js';
 
 import Navigation from './Navigation.js';
 import './Navigation.css';
@@ -18,7 +20,8 @@ function App() {
       <Navigation />
       <div className="content">
         <Routes>
-          <Route path="/" exact element={ <Home /> } />
+          <Route path="/" element={ <RedirectToHome /> } />
+          <Route path="/home" element={ <Home /> } />
           <Route path="/projects" element={ <Projects /> } />
           <Route path="/resume" element={ <Resume /> } />
         </Routes>

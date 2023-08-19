@@ -1,11 +1,35 @@
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navigation = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 15) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+            setLastScrollY(window.scrollY);
+        };
+        
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [lastScrollY]);
+
+    const pageTitle = useLocation().pathname.substring(1).charAt(0).toUpperCase() + useLocation().pathname.substring(2);
+
     return (
-        <nav className="navbar shadow">
-            <h1>Nico Moehn</h1>
+        <nav className={`navbar shadow`}>
+            <div className={`pageHeader ${isVisible ? 'visible' : ''}`}>
+                <h1 id="pageTitle">{pageTitle}</h1>
+            </div>
             <div className="links">
-                <div className="btn"><Link className="navLink" to="/">Home</Link></div>
+                <div className="btn"><Link className="navLink" to="/home">Home</Link></div>
                 <div className="btn"><Link className="navLink" to="/projects">Projects</Link></div>
                 <div className="btn"><Link className="navLink" to="/resume">Resume</Link></div>
             </div>
