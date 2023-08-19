@@ -26,9 +26,12 @@
 
 #intro-container p {
     font-family: 'Roboto Mono', monospace;
-    padding: 32px;
-    border: 2px solid var(--mid);
-    border-radius: 16px;
     font-size: 1.2em;
     text-align: left;
+
+    padding: 16px;
+    max-width: 100%;
+    border: 2px solid var(--yellow);
+    border-radius: 0px;
+    border-style: solid;
 }

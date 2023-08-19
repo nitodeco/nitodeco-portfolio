@@ -86,7 +86,7 @@ a {
 
 a:hover {
   color: var(--yellow);
-  font-size: 110%;
+  font-size: 105%;
 }
 
 .btn {
@@ -99,7 +99,7 @@ a:hover {
   background-color: var(--bg);
   color: var(--white);
   position: relative;
-  transition: transform 0.3s;
+  transition: transform 0.2s;
 }
 
 .btn:hover {
