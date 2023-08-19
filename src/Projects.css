@@ -40,3 +40,7 @@
     gap: 48px;
     justify-items: center;
 }
+
+.navLink:active {
+    color: var(--yellow);
+}

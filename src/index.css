@@ -26,33 +26,7 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
-.navbar {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: auto;
-  font-family: 'Roboto Mono', monospace;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: var(--bg);
-}
 
-.links {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 32px;
-  width: 100vw;
-}
-
-.navbar h1 {
-  font-size: 32px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
 /*
 .content {
   display: flex;
