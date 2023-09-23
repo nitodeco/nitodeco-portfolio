@@ -30,16 +30,20 @@ const Resume = () => {
             <div className={ `titleContainer ${scrollDirection === 'up' ? 'show' : 'hide'}`}>
                 <h2 className="title">Welcome</h2>
             </div>
-            <div id="intro-container">
-                <p>
-                    Hello there! <br/>
-                    <br/>
-                    I'm Nico, a {age}-year-old web developer based in Germany. <br /> 
-                    This portfolio is my way of sharing the excitement of my journey with you. <br /> 
-                    Here, I've put together a collection of demo projects that showcase what I've been working on <br/>
-                    in order to improve my skills. Enjoy!
-                </p>
-                <img src={process.env.PUBLIC_URL + '/img/profile.jpg'} alt="Portrait of Nico"/>
+            <div className="intro-container">
+                <div className="intro-content">
+                    <div>
+                        <img id="profile-img" src={process.env.PUBLIC_URL + '/img/profile.jpg'} alt="Portrait of Nico" />
+                    </div>
+                    <p id="intro-text">
+                        Hello there! <br />
+                        <br />
+                        I'm Nico, a {age}-year-old web developer based in Germany. <br />
+                        This portfolio is my way of sharing the excitement of my journey with you. <br />
+                        Here, I've put together a collection of demo projects that showcase what I've been working on <br />
+                        in order to improve my skills. Enjoy!
+                    </p>
+                </div>
             </div>
         </div>
     );
