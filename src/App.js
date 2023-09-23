@@ -5,9 +5,6 @@ import RedirectToHome from './RedirectToHome.js';
 import Navigation from './Navigation.js';
 import './Navigation.css';
 
-import Home from './Home.js';
-import './Home.css';
-
 import Projects from './Projects.js';
 import './Projects.css';
 
@@ -21,9 +18,8 @@ function App() {
       <div className="content">
         <Routes>
           <Route path="/" element={ <RedirectToHome /> } />
-          <Route path="/home" element={ <Home /> } />
+          <Route path="/home" element={ <Resume /> } />
           <Route path="/projects" element={ <Projects /> } />
-          <Route path="/resume" element={ <Resume /> } />
         </Routes>
       </div>
     </div>
