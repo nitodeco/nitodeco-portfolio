@@ -29,9 +29,8 @@ const Navigation = () => {
                 <h1 id="pageTitle">{pageTitle}</h1>
             </div>
             <div className="links shadow">
-                <div className="btn"><Link className="navLink" to="/home">Home</Link></div>
+                <div className="btn"><Link className="navLink" to="/home">Resume</Link></div>
                 <div className="btn"><Link className="navLink" to="/projects">Projects</Link></div>
-                <div className="btn"><Link className="navLink" to="/resume">Resume</Link></div>
             </div>
         </nav>
     );
