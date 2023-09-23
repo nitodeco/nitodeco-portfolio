@@ -34,10 +34,10 @@ const Resume = () => {
                 <p>
                     Hello there! <br/>
                     <br/>
-                    I'm Nico, a {age}-year-old based in Germany who's absolutely passionate of web development. <br /> 
+                    I'm Nico, a {age}-year-old web developer based in Germany. <br /> 
                     This portfolio is my way of sharing the excitement of my journey with you. <br /> 
                     Here, I've put together a collection of demo projects that showcase what I've been working on <br/>
-                    in order to improve my skills.
+                    in order to improve my skills. Enjoy!
                 </p>
             </div>
         </div>
