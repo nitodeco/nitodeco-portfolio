@@ -1,3 +1,4 @@
+import { useScrollDirection } from "../utils";
 
 const Projects = () => {
 

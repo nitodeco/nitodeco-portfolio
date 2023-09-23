@@ -1,3 +1,4 @@
+import { useScrollDirection } from "../utils";
 
 function calculateAge(birthdate) {
     const birthYear = birthdate.getFullYear();
