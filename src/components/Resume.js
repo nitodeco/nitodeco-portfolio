@@ -36,18 +36,13 @@ const Resume = () => {
 
     const skills = [
         {
-          aspect: 'Programming Languages',
-          items: ['JavaScript', 'Python', 'Java', 'C++'],
+          aspect: 'Web Development',
+          items: ['HTML - CSS', 'JavaScript - TypeScript', 'Node.js', 'Express.js'],
         },
         {
-          aspect: 'Frontend Development',
-          items: ['HTML', 'CSS', 'React', 'Vue.js'],
-        },
-        {
-          aspect: 'Backend Development',
-          items: ['Node.js', 'Express.js', 'Django', 'Flask'],
-        },
-        // Add more aspects and skills as needed
+          aspect: 'Adobe',
+          items: ['Lightroom', 'Photoshop', 'Illustrator', 'Premiere Pro'],
+        }
       ];
 
     return (
@@ -62,15 +57,15 @@ const Resume = () => {
                 <p id="intro-text">
                     Hello there! <br />
                     <br />
-                    I'm Nico, a {age}-year-old web developer based in Germany. <br />
-                    This portfolio is my way of sharing the excitement of my journey with you. <br />
-                    Here, I've put together a collection of demo projects that showcase what I've been working on <br />
+                    I'm Nico, a {age}-year-old web developer based in Germany.
+                    This portfolio is my way of sharing the excitement of my journey with you.
+                    Here, I've put together a collection of demo projects that showcase what I've been working on
                     in order to improve my skills. Enjoy!
                 </p>
             </div>
             <div className='resume'>
                 {skills.map((skill, index) => (
-                    <div key={index} className='skill'>
+                    <div key={index} className='skill mono'>
                     <h2>{skill.aspect}</h2>
                     <ul className='grid-list'>
                         {skill.items.map((item, i) => (
