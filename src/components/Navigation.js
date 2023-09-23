@@ -23,14 +23,18 @@ const Navigation = () => {
 
     const pageTitle = useLocation().pathname.substring(1).charAt(0).toUpperCase() + useLocation().pathname.substring(2);
 
+    const resetPageTitle = () => {
+        setIsVisible(false);
+    };
+
     return (
         <nav className={`navbar shadow`}>
             <div className={`pageHeader ${isVisible ? 'visible' : ''}`}>
                 <h1 id="pageTitle">{pageTitle}</h1>
             </div>
             <div className="links shadow">
-                <div className="btn"><Link className="navLink" to="/resume">Resume</Link></div>
-                <div className="btn"><Link className="navLink" to="/projects">Projects</Link></div>
+                <div className="btn"><Link className="navLink" to="/resume" onClick={resetPageTitle}>Resume</Link></div>
+                <div className="btn"><Link className="navLink" to="/projects" onClick={resetPageTitle}>Projects</Link></div>
             </div>
         </nav>
     );

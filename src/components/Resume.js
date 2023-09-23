@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useScrollDirection } from "../utils";
 
@@ -27,6 +27,8 @@ const Resume = () => {
 
     const location = useLocation();
     const scrollDirection = useScrollDirection();
+
+    const elementRef = useRef(null);
 
     useEffect(() => {
         scrollDirection.reset();
