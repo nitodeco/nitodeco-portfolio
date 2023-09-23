@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useScrollDirection } from "../utils";
 
 const Projects = () => {
@@ -8,11 +10,16 @@ const Projects = () => {
     const project2 = baseURL + "";
     const project3 = baseURL + "";
 
+    const location = useLocation();
     const scrollDirection = useScrollDirection();
+
+    useEffect(() => {
+        scrollDirection.reset();
+    }, [location.pathname], scrollDirection);
 
     return (
         <div className="projects">
-            <div id="title-card" className={ `titleContainer ${scrollDirection === 'up' ? 'show' : 'hide'}`}>
+            <div id="title-card" className={ `titleContainer ${scrollDirection.direction === 'up' ? 'show' : 'hide'}`}>
                 <h2 className="title">Projects</h2>
             </div>
             <div id="project-container">

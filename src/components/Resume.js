@@ -1,3 +1,5 @@
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useScrollDirection } from "../utils";
 
 function calculateAge(birthdate) {
@@ -23,11 +25,16 @@ const Resume = () => {
     const birthdate = new Date('2002-02-23');
     const age = calculateAge(birthdate);
 
+    const location = useLocation();
     const scrollDirection = useScrollDirection();
+
+    useEffect(() => {
+        scrollDirection.reset();
+    }, [location.pathname], scrollDirection);
 
     return (
         <div className="home">
-            <div id="title-card" className={ `titleContainer ${scrollDirection === 'up' ? 'show' : 'hide'}`}>
+            <div id="title-card" className={ `titleContainer ${scrollDirection.direction === 'up' ? 'show' : 'hide'}`}>
                 <h2 className="title">Welcome</h2>
             </div>
             <div className="intro-content">
