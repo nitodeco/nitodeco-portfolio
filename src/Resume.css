@@ -3,3 +3,35 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+#welcome {
+    font-size: 4rem;
+}
+
+#intro-container {
+    padding: 2em;
+    padding-inline: 10vw;
+    min-width: 70vw;
+    max-width: 90vw;
+}
+
+#intro-container p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2em;
+    text-align: left;
+
+    padding: 16px;
+    max-width: 100%;
+    border: 2px solid var(--yellow);
+    border-radius: 0px;
+    border-style: solid;
+}
