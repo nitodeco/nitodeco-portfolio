@@ -21,3 +21,10 @@ export function useScrollDirection() {
 
   return direction;
 }
+
+export function resetElementClassesById(element) {
+    const _element = document.getElementById(element);
+    if (_element) {
+        _element.className = 'titleContainer';
+    }
+}
