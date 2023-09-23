@@ -27,7 +27,7 @@ const Resume = () => {
 
     return (
         <div className="home">
-            <div className={ `titleContainer ${scrollDirection === 'up' ? 'show' : 'hide'}`}>
+            <div id="title-card" className={ `titleContainer ${scrollDirection === 'up' ? 'show' : 'hide'}`}>
                 <h2 className="title">Welcome</h2>
             </div>
             <div className="intro-content">

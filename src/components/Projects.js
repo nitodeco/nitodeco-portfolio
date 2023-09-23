@@ -12,7 +12,7 @@ const Projects = () => {
 
     return (
         <div className="projects">
-            <div className={ `titleContainer ${scrollDirection === 'up' ? 'show' : 'hide'}`}>
+            <div id="title-card" className={ `titleContainer ${scrollDirection === 'up' ? 'show' : 'hide'}`}>
                 <h2 className="title">Projects</h2>
             </div>
             <div id="project-container">
