@@ -34,6 +34,22 @@ const Resume = () => {
         scrollDirection.reset();
     }, [location.pathname], scrollDirection);
 
+    const skills = [
+        {
+          aspect: 'Programming Languages',
+          items: ['JavaScript', 'Python', 'Java', 'C++'],
+        },
+        {
+          aspect: 'Frontend Development',
+          items: ['HTML', 'CSS', 'React', 'Vue.js'],
+        },
+        {
+          aspect: 'Backend Development',
+          items: ['Node.js', 'Express.js', 'Django', 'Flask'],
+        },
+        // Add more aspects and skills as needed
+      ];
+
     return (
         <div className="home">
             <div id="title-card" className={ `titleContainer ${scrollDirection.direction === 'up' ? 'show' : 'hide'}`}>
@@ -51,6 +67,18 @@ const Resume = () => {
                     Here, I've put together a collection of demo projects that showcase what I've been working on <br />
                     in order to improve my skills. Enjoy!
                 </p>
+            </div>
+            <div className='resume'>
+                {skills.map((skill, index) => (
+                    <div key={index} className='skill'>
+                    <h2>{skill.aspect}</h2>
+                    <ul className='grid-list'>
+                        {skill.items.map((item, i) => (
+                        <li key={i}>{item}</li>
+                        ))}
+                    </ul>
+                    </div>
+                ))}
             </div>
         </div>
     );
