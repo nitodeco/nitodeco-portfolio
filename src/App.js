@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, } from 'react-router-dom';
 
 import RedirectToHome from './components/RedirectToHome.js';
 
